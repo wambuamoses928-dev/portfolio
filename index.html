@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Wambua Moses Masila — Web products, built and shipped</title>
-<meta name="description" content="Full-stack builder in Nairobi. I design, build and ship complete web products: paid platforms, M-Pesa payments, admin dashboards with real permissions, and Telegram alerts that report what happens." />
-<meta property="og:title" content="Wambua Moses Masila — Web products, built and shipped" />
-<meta property="og:description" content="Three live products, built end to end: EarnKsh, NexMint and LiveBoost." />
+<title>Wambua Moses — Independent software engineer, Nairobi</title>
+<meta name="description" content="Independent software engineer in Nairobi building web products that handle real money: payment platforms, admin dashboards with real permissions, and automation that reports what happened." />
+<meta property="og:title" content="Wambua Moses — I build web products that handle real money" />
+<meta property="og:description" content="Freelance and earning platforms, M-Pesa payments, admin systems and Telegram automation. Four live products, built end to end." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://moses.nexmint.online/" />
 <link rel="canonical" href="https://moses.nexmint.online/" />
@@ -16,226 +16,290 @@
 <meta property="og:site_name" content="Wambua Moses Masila" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://moses.nexmint.online/og.png" />
-<meta name="theme-color" content="#F5FBF7" />
+<meta name="theme-color" content="#F4F9F5" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
 
-<header class="site-head">
+<a class="skip" href="#work">Skip to selected work</a>
+
+<header class="site-head" id="siteHead">
   <div class="wrap head-inner">
-    <a class="mark" href="#top">
-      <span class="mark-dot"></span>
-      <span>Wambua Moses</span>
+    <a class="brand" href="#top">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-name">Wambua Moses</span>
     </a>
-    <nav class="nav">
-      <a href="#work">Work</a>
-      <a href="#build">What I build</a>
-      <a href="#contact" class="nav-cta">Get in touch</a>
-    </nav>
+    <div class="head-right">
+      <span class="avail" aria-label="Available for new work">
+        <span class="avail-dot" aria-hidden="true"></span>
+        <span class="avail-text">Available for work</span>
+      </span>
+      <a class="btn btn-solid btn-sm" href="mailto:wambuamoses928@gmail.com?subject=Project%20enquiry">Get in touch</a>
+    </div>
   </div>
 </header>
 
 <main id="top">
 
-  <section class="hero wrap">
-    <p class="eyebrow reveal">Portfolio · Nairobi, Kenya</p>
-    <h1 class="reveal">I build web products that<br /><em>handle real money.</em></h1>
-    <p class="lede reveal">
-      Paid platforms, M-Pesa payments, admin dashboards with permissions that actually hold,
-      and Telegram alerts that tell the owner the moment something moves. Designed, built and
-      shipped end to end, then kept running.
-    </p>
-    <div class="hero-actions reveal">
-      <a class="btn btn-primary" href="#work">See the live work</a>
-      <a class="btn btn-ghost" href="mailto:wambuamoses928@gmail.com?subject=Project%20enquiry">Email me</a>
-    </div>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span>Independent software engineer · Nairobi, Kenya</p>
+        <h1>I build web products that <em>handle real money.</em></h1>
+        <p class="lede">I design, build and ship digital products, payment systems, admin dashboards and automation tools. From the first interface to the backend infrastructure, I focus on building products that work in the real world.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="#work">Explore my work</a>
+          <a class="btn btn-outline" href="mailto:wambuamoses928@gmail.com?subject=Project%20enquiry">Get in touch</a>
+        </div>
+      </div>
 
-    <dl class="proof reveal">
-      <div><dt>Live products</dt><dd>3</dd></div>
-      <div><dt>Payments</dt><dd>M-Pesa · STK</dd></div>
-      <div><dt>Ops by phone</dt><dd>Telegram bots</dd></div>
-      <div><dt>Stack</dt><dd>Next.js · React · Postgres</dd></div>
+      <div class="hero-visual">
+        <div class="stage">
+          <figure class="stage-main">
+            <div class="chrome" aria-hidden="true">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="url">nexmint.online</span>
+            </div>
+            <img src="/work/hero-nexmint.webp" width="1280" height="800" alt="NexMint task platform open in a browser, showing its dashboard" fetchpriority="high" decoding="async" />
+          </figure>
+
+          <figure class="stage-phone">
+            <img src="/work/hero-earnksh.webp" width="390" height="800" alt="EarnKsh member dashboard on a phone, showing wallet balance and available surveys" decoding="async" />
+          </figure>
+
+          <div class="stage-alert" aria-hidden="true">
+            <span class="pip"></span>
+            <div class="stage-alert-body">
+              <strong>Activation paid</strong>
+              <span>KES 100 · M-Pesa STK</span>
+            </div>
+            <time>now</time>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CREDIBILITY STRIP ============ -->
+  <section class="wrap strip-wrap" aria-label="At a glance">
+    <dl class="strip">
+      <div><dt>Live products</dt><dd>4</dd></div>
+      <div><dt>Payments</dt><dd>M-Pesa · STK Push</dd></div>
+      <div><dt>Automation</dt><dd>Telegram bots</dd></div>
+      <div><dt>Technology</dt><dd>Next.js · React · PostgreSQL</dd></div>
     </dl>
   </section>
 
-  <section id="work" class="wrap work">
-    <div class="section-head">
-      <p class="eyebrow">Selected work</p>
-      <h2>Live, in production, with users on them.</h2>
-    </div>
+  <!-- ============ FEATURED WORK ============ -->
+  <section id="work" class="section work">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span>Selected work</p>
+        <h2>Four builds, shipped end to end <em>and still running.</em></h2>
+        <p class="sec-sub">Live platforms with real users, real payments and the admin operations behind them. Every link opens the actual product.</p>
+      </header>
 
-    <article class="case">
-      <div class="case-body reveal">
-        <span class="case-num">01</span>
-        <h3>EarnKsh</h3>
-        <p class="case-tag">Paid surveys, paid out in M-Pesa</p>
-        <p>
-          Members activate once for KES 100, answer surveys from partners, and withdraw their
-          balance straight to M-Pesa. Balances, approvals and payouts are all decided on the
-          server, so nothing a browser sends is trusted. The admin side covers users, finance,
-          survey review, VIP hours and support tickets, with a read-only level for staff who
-          should see everything and change nothing.
-        </p>
-        <ul class="tags">
-          <li>Next.js</li><li>Postgres</li><li>M-Pesa STK</li><li>Telegram alerts</li><li>Installable PWA</li>
-        </ul>
-        <a class="case-link" href="https://earnksh.online" target="_blank" rel="noopener">earnksh.online <span>↗</span></a>
-      </div>
-      <figure class="case-shot reveal">
-        <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>earnksh.online</span></div>
-          <img src="/work/earnksh.webp" alt="EarnKsh home page showing the balance card and available surveys" loading="lazy" width="1440" height="960" />
-        </div>
-      </figure>
-    </article>
+      <div class="projects">
 
-    <article class="case flip">
-      <div class="case-body reveal">
-        <span class="case-num">02</span>
-        <h3>NexMint</h3>
-        <p class="case-tag">A digital work platform</p>
-        <p>
-          Task-based work across creative, transcription, writing and tech and development,
-          pulled into one place. Onboarding, task discovery and the operator side that keeps
-          every listing honest, all on the same data model.
-        </p>
-        <ul class="tags">
-          <li>React</li><li>Supabase</li><li>Admin console</li><li>Task workflow</li>
-        </ul>
-        <a class="case-link" href="https://nexmint.online" target="_blank" rel="noopener">nexmint.online <span>↗</span></a>
-      </div>
-      <figure class="case-shot reveal">
-        <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>nexmint.online</span></div>
-          <img src="/work/nexmint.webp" alt="NexMint landing page" loading="lazy" width="1440" height="960" />
-        </div>
-      </figure>
-    </article>
-
-    <article class="case">
-      <div class="case-body reveal">
-        <span class="case-num">03</span>
-        <h3>LiveBoost</h3>
-        <p class="case-tag">Social growth, ordered in seconds</p>
-        <p>
-          A panel for followers, likes and views with instant checkout, reseller pricing and
-          live order tracking. Orders land in a delivery queue that runs itself, and the
-          operator console handles reviews and payouts without touching the database.
-        </p>
-        <ul class="tags">
-          <li>Order engine</li><li>Reseller pricing</li><li>Automated delivery</li><li>Wallet</li>
-        </ul>
-        <a class="case-link" href="https://liveboost.online" target="_blank" rel="noopener">liveboost.online <span>↗</span></a>
-      </div>
-      <figure class="case-shot reveal">
-        <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>liveboost.online</span></div>
-          <img src="/work/liveboost.webp" alt="LiveBoost landing page" loading="lazy" width="1440" height="960" />
-        </div>
-      </figure>
-    </article>
-
-    <article class="case note-case">
-      <div class="case-body reveal">
-        <span class="case-num">04</span>
-        <h3>The alert layer</h3>
-        <p class="case-tag">Operations that run on your phone</p>
-        <p>
-          Every platform above reports to Telegram. New sign-ups, activation payments,
-          submissions waiting for review, withdrawal requests, support tickets and payouts
-          arrive as they happen, with a daily summary at 21:00 EAT. Alerts fire in the
-          background, so a slow bot can never break a member's checkout.
-        </p>
-        <ul class="tags">
-          <li>Telegram Bot API</li><li>Webhooks</li><li>Scheduled summaries</li>
-        </ul>
-        <a class="case-link" href="https://t.me/Earnkshbot" target="_blank" rel="noopener">@Earnkshbot <span>↗</span></a>
-      </div>
-      <div class="note-card reveal" aria-hidden="true">
-        <div class="tel">
-          <div class="tel-head"><span class="tel-avatar">E</span><span><strong>Earnkshbot</strong><em>bot</em></span></div>
-          <div class="bubble">
-            <strong>New submission</strong>
-            <span>Survey · 250 points · waiting for review</span>
-            <time>just now</time>
+        <!-- 01 NexMint -->
+        <article class="project">
+          <div class="project-media">
+            <img src="/work/nexmint.webp" width="1400" height="875" alt="NexMint homepage with its task marketplace hero and category navigation" loading="lazy" decoding="async" />
+            <span class="live-tag"><i aria-hidden="true"></i>Live</span>
           </div>
-          <div class="bubble bubble-alt">
-            <strong>Withdrawal request</strong>
-            <span>KES 1,200 to M-Pesa · 07•• ••• 715</span>
-            <time>09:12</time>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-num">01</span>
+              <h3>NexMint</h3>
+            </div>
+            <p class="project-tag">Freelance task and earning platform</p>
+            <p class="project-desc">A freelance task and earning platform with subscription-based task access, participant dashboards, wallet functionality and administrative management.</p>
+            <ul class="tags">
+              <li>React</li><li>Vite</li><li>Wallet</li><li>Admin console</li>
+            </ul>
+            <a class="project-link" href="https://nexmint.online" target="_blank" rel="noopener">nexmint.online <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="bubble">
-            <strong>Daily summary · 21:00</strong>
-            <span>2 sign-ups · 2 activations · KES 225 collected</span>
-            <time>21:00</time>
-          </div>
-        </div>
-      </div>
-    </article>
-  </section>
+        </article>
 
-  <section id="build" class="wrap build">
-    <div class="section-head">
-      <p class="eyebrow">What I build</p>
-      <h2>The whole product, not one slice of it.</h2>
-    </div>
-    <div class="grid">
-      <div class="card reveal">
-        <h3>Products, end to end</h3>
-        <p>Landing page, auth, onboarding, the working app and the admin behind it. One coherent build, not five disconnected pieces.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Payments and wallets</h3>
-        <p>M-Pesa STK push, activation fees, ledgers and withdrawals. Every amount is recomputed on the server before money moves.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Admin and permissions</h3>
-        <p>Roles that hold: read-only accounts that can browse everything, full-access accounts that can act, enforced on every endpoint.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Bots and automation</h3>
-        <p>Telegram bots for alerts, daily numbers and support, plus scheduled jobs that keep queues moving without anyone watching.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Data you can trust</h3>
-        <p>Postgres or Supabase with row-level security and server-side rules, so the dashboard never lies about what happened.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Mobile-first interfaces</h3>
-        <p>Built for the phone first, since that is where the members are. Installable as an app, fast on a thin connection.</p>
+        <!-- 02 LiveBoost -->
+        <article class="project">
+          <div class="project-media">
+            <img src="/work/liveboost.webp" width="1400" height="875" alt="LiveBoost social media marketing homepage with its ordering interface" loading="lazy" decoding="async" />
+            <span class="live-tag"><i aria-hidden="true"></i>Live</span>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-num">02</span>
+              <h3>LiveBoost</h3>
+            </div>
+            <p class="project-tag">Social media growth platform</p>
+            <p class="project-desc">A social media marketing platform that lets customers buy growth services through a streamlined ordering and payment flow, with orders tracked from checkout to delivery.</p>
+            <ul class="tags">
+              <li>React</li><li>Order engine</li><li>Automated fulfilment</li><li>Payments</li>
+            </ul>
+            <a class="project-link" href="https://liveboost.online" target="_blank" rel="noopener">liveboost.online <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <!-- 03 Sigma Tech -->
+        <article class="project">
+          <div class="project-media media-bot">
+            <div class="bot-console">
+              <img src="/work/bot-console.webp" width="800" height="416" alt="WhatsApp bot console showing connection status, message counters and pairing controls" loading="lazy" decoding="async" />
+            </div>
+            <div class="bot-phone">
+              <img src="/work/bot-telegram.webp" width="390" height="800" alt="Telegram bot profile for the EarnKsh notification bot" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-num">03</span>
+              <h3>Sigma Tech</h3>
+            </div>
+            <p class="project-tag">Telegram and WhatsApp bot engineering</p>
+            <p class="project-desc">Two production Telegram bots that alert the owner on sign-ups, payments, withdrawals and support tickets, plus a WhatsApp bot console handling device pairing, session persistence and auto-replies.</p>
+            <ul class="tags">
+              <li>Node.js</li><li>TypeScript</li><li>Baileys</li><li>Telegram Bot API</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://t.me/Earnkshbot" target="_blank" rel="noopener">@Earnkshbot <span aria-hidden="true">↗</span></a>
+              <a class="project-link muted" href="https://t.me/Boos1tbot" target="_blank" rel="noopener">@Boos1tbot <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 EarnKsh -->
+        <article class="project">
+          <div class="project-media">
+            <img src="/work/earnksh.webp" width="1400" height="875" alt="EarnKsh paid survey platform homepage" loading="lazy" decoding="async" />
+            <span class="live-tag"><i aria-hidden="true"></i>Live</span>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-num">04</span>
+              <h3>EarnKsh</h3>
+            </div>
+            <p class="project-tag">Paid surveys, paid out in M-Pesa</p>
+            <p class="project-desc">Members activate once, answer partner surveys and withdraw straight to M-Pesa. Balances, approvals and payouts are decided on the server, with read-only and full-access admin levels and an installable app.</p>
+            <ul class="tags">
+              <li>Next.js</li><li>Supabase</li><li>M-Pesa STK</li><li>PWA</li>
+            </ul>
+            <a class="project-link" href="https://earnksh.online" target="_blank" rel="noopener">earnksh.online <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <section class="wrap process">
-    <div class="section-head">
-      <p class="eyebrow">How a build runs</p>
-      <h2>Three steps, no theatre.</h2>
+  <!-- ============ WHAT I BUILD ============ -->
+  <section id="build" class="section build">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span>What I build</p>
+        <h2>The whole product, <em>not one slice of it.</em></h2>
+      </header>
+
+      <div class="capabilities">
+        <article class="cap cap-lg">
+          <div class="cap-head">
+            <span class="cap-num">01</span>
+            <span class="cap-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="M2.5 8.5h19"/><circle cx="5.8" cy="6.2" r=".6" fill="currentColor" stroke="none"/><circle cx="7.8" cy="6.2" r=".6" fill="currentColor" stroke="none"/><path d="M6 12.5h7M6 16h4.5"/></svg>
+            </span>
+          </div>
+          <h3>Web application development</h3>
+          <p>Custom digital products, responsive interfaces and dashboards built as one coherent application.</p>
+        </article>
+
+        <article class="cap cap-lg">
+          <div class="cap-head">
+            <span class="cap-num">02</span>
+            <span class="cap-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/><path d="M2.5 9.5h19"/><path d="M6 14.5h3.5"/></svg>
+            </span>
+          </div>
+          <h3>Payment integrations</h3>
+          <p>M-Pesa integrations, payment workflows and transaction handling, with every amount checked server-side before money moves.</p>
+        </article>
+
+        <article class="cap cap-lg">
+          <div class="cap-head">
+            <span class="cap-num">03</span>
+            <span class="cap-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7.5" ry="3"/><path d="M4.5 6v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6"/><path d="M4.5 12v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-6"/></svg>
+            </span>
+          </div>
+          <h3>Backend systems</h3>
+          <p>Databases, APIs, authentication and the business logic that keeps accounts and records consistent.</p>
+        </article>
+
+        <article class="cap cap-half">
+          <div class="cap-head">
+            <span class="cap-num">04</span>
+            <span class="cap-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5v3M16 3.5v3"/><rect x="4" y="6.5" width="16" height="11" rx="3.5"/><circle cx="9.5" cy="12" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12" r="1.1" fill="currentColor" stroke="none"/><path d="M12 3.5v3"/><path d="M9 17.5v3M15 17.5v3"/></svg>
+            </span>
+          </div>
+          <h3>Automation</h3>
+          <p>Bots, notifications, scheduled jobs and integrations that keep operations moving without anyone watching.</p>
+        </article>
+
+        <article class="cap cap-half">
+          <div class="cap-head">
+            <span class="cap-num">05</span>
+            <span class="cap-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5h16M4 12h16M4 17.5h16"/><circle cx="9" cy="6.5" r="2" fill="#fff"/><circle cx="15" cy="12" r="2" fill="#fff"/><circle cx="8" cy="17.5" r="2" fill="#fff"/></svg>
+            </span>
+          </div>
+          <h3>Administrative systems</h3>
+          <p>User management, permissions, reporting and financial operations, including read-only roles that hold on every endpoint.</p>
+        </article>
+      </div>
     </div>
-    <ol class="steps">
-      <li class="reveal"><span>1</span><div><h3>Define the outcome</h3><p>What the product must do, who pays, what must never break. Agreed before a line of code.</p></div></li>
-      <li class="reveal"><span>2</span><div><h3>Build the working thing</h3><p>Real backend, real payments in test mode, real admin. Progress lands on a live URL you can open as it happens.</p></div></li>
-      <li class="reveal"><span>3</span><div><h3>Ship and keep watch</h3><p>Deployed on your domain, alerts wired to your phone, and the fixes that only show up once people use it.</p></div></li>
-    </ol>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="wrap contact-inner">
-      <p class="eyebrow reveal">Get in touch</p>
-      <h2 class="reveal">Tell me what you want built.</h2>
-      <p class="lede reveal">Platforms, payments, dashboards or bots. A short description of the outcome is enough to start.</p>
-      <a class="mail reveal" href="mailto:wambuamoses928@gmail.com">wambuamoses928@gmail.com</a>
-      <div class="contact-links reveal">
-        <a href="https://github.com/wambuamoses928-dev" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://earnksh.online" target="_blank" rel="noopener">EarnKsh</a>
-        <a href="https://nexmint.online" target="_blank" rel="noopener">NexMint</a>
-        <a href="https://liveboost.online" target="_blank" rel="noopener">LiveBoost</a>
+  <!-- ============ ABOUT ============ -->
+  <section class="section about">
+    <div class="wrap about-grid">
+      <div class="about-head">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span>About</p>
+        <h2>Building digital products <em>with purpose.</em></h2>
+      </div>
+      <div class="about-copy">
+        <p>I'm Wambua Moses, a Nairobi-based independent developer focused on building practical web products, financial workflows and automation systems.</p>
+        <p>I enjoy turning ideas into functional digital experiences, paying attention to both the interface people interact with and the systems powering it.</p>
+        <a class="text-link" href="mailto:wambuamoses928@gmail.com?subject=Project%20enquiry">Start a conversation <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <p class="eyebrow light">Get in touch</p>
+          <h2>Have something <em>worth building?</em></h2>
+          <p class="contact-sub">Let's discuss your next digital product, platform or automation project.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-light" href="mailto:wambuamoses928@gmail.com?subject=Project%20enquiry">Get in touch</a>
+          <a class="mail" href="mailto:wambuamoses928@gmail.com">wambuamoses928@gmail.com</a>
+          <ul class="socials">
+            <li><a href="https://github.com/wambuamoses928-dev" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://earnksh.online" target="_blank" rel="noopener">EarnKsh <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://t.me/Earnkshbot" target="_blank" rel="noopener">Telegram <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -244,7 +308,7 @@
 <footer class="site-foot">
   <div class="wrap foot-inner">
     <span>© 2026 Wambua Moses Masila</span>
-    <span>Nairobi, Kenya · EAT</span>
+    <span class="foot-loc">Nairobi, Kenya · EAT</span>
   </div>
 </footer>
 
